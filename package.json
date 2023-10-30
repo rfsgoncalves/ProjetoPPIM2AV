@@ -9,7 +9,6 @@
     "start": "node index.js",
     "eslint": "eslint ./",
     "eslint-fix": "eslint ./ --fix",
-    "build": "webpack"
   },
   "repository": {
     "type": "git",
