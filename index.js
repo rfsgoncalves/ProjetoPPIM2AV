@@ -1,5 +1,4 @@
 import express from 'express';
-import path from 'path';
 
 const porta = 3000;
 const host = '0.0.0.0';
@@ -70,7 +69,7 @@ function processarCadastroUsuario(requisicao, resposta) {
 const app = express();
 
 //indicando para a aplicação como servir arquivos estáticos localizados na pasta 'paginas'
-app.use(express.static('./paginas'));
+app.use(express.static(process.cwd()+'/paginas'));
 
 app.get('/', (requisicao, resposta) => {
     resposta.end(`
